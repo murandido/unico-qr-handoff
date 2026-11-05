@@ -2,6 +2,8 @@
 
 A tiny browser extension for **Chrome** and **Firefox** that makes [Unico](https://unico.io)'s identity check offer the **QR code** on desktop, so you can take the selfie on your phone instead of the computer's webcam. It also adds a **Copy link** button under the QR code, so you can send the link to your phone without scanning.
 
+> 📖 **New here? Follow the [step-by-step guide with pictures](docs/INSTALL.md).**
+>
 > 🇧🇷 [Leia em português](#português)
 
 ## Why
@@ -96,6 +98,8 @@ Extensão para **Chrome** e **Firefox** que faz a verificação facial da Unico 
 **Por quê:** o front-end da Unico considera o Opera um navegador "não suportado". No desktop, um navegador não suportado vai para a tela do QR code. A extensão adiciona `OPR/…` ao User-Agent **só nas páginas e frames da Unico** (`*.unico.app` e `*.unico.io`), e o resto da navegação continua igual. Funciona com a Smiles, que abre a Unico num iframe, e com a LATAM, que abre uma página da Unico.
 
 **Botão "Copiar link do QR code":** quando o QR aparece, a extensão lê o QR localmente e mostra um botão logo abaixo para copiar o link. Mande o link para o celular e abra lá. Se abrir no mesmo computador com a extensão ligada, a Unico só mostra o QR de novo.
+
+📖 **Primeira vez? Siga o [passo a passo com imagens](docs/INSTALL.pt-BR.md).**
 
 **Baixar:** pegue o `.zip` na [última release](https://github.com/murandido/unico-qr-handoff/releases/latest) e descompacte.
 
