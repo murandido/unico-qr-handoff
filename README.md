@@ -26,17 +26,18 @@ On desktop, an unsupported browser is sent to the QR code screen. This extension
 
 ## Install
 
+Grab `unico-qr-handoff-<version>.zip` from the [latest release](https://github.com/murandido/unico-qr-handoff/releases/latest) and unzip it, or clone this repository and use the `extension/` folder.
+
 ### Chrome (and other Chromium browsers)
 
-1. Download or clone this repository.
-2. Open `chrome://extensions` and turn on **Developer mode**.
-3. Click **Load unpacked** and select the `extension/` folder.
+1. Open `chrome://extensions` and turn on **Developer mode**.
+2. Click **Load unpacked** and select the unzipped folder (or `extension/`).
 
 Chrome may show a warning about the `browser_specific_settings` key. That key is for Firefox only, and Chrome ignores it.
 
 ### Firefox (140+)
 
-- **Temporary (for testing):** open `about:debugging#/runtime/this-firefox`, click **Load Temporary Add-on…** and pick `extension/manifest.json`. It stays loaded until Firefox restarts.
+- **Temporary (for testing):** open `about:debugging#/runtime/this-firefox`, click **Load Temporary Add-on…** and pick the release `.zip` (or `extension/manifest.json`). It stays loaded until Firefox restarts.
 - **Permanent:** build the package (`npm run build`) and sign it through [addons.mozilla.org](https://addons.mozilla.org/developers/) as an unlisted add-on, then install the signed `.xpi`.
 
 ## Usage
@@ -96,8 +97,10 @@ Extensão para **Chrome** e **Firefox** que faz a verificação facial da Unico 
 
 **Botão "Copiar link do QR code":** quando o QR aparece, a extensão lê o QR localmente e mostra um botão logo abaixo para copiar o link. Mande o link para o celular e abra lá. Se abrir no mesmo computador com a extensão ligada, a Unico só mostra o QR de novo.
 
-**Instalar no Chrome:** `chrome://extensions` → ative o *Modo do desenvolvedor* → *Carregar sem compactação* → escolha a pasta `extension/`.
+**Baixar:** pegue o `.zip` na [última release](https://github.com/murandido/unico-qr-handoff/releases/latest) e descompacte.
 
-**Instalar no Firefox (140+):** `about:debugging#/runtime/this-firefox` → *Carregar extensão temporária…* → `extension/manifest.json`. Para instalar de forma permanente, assine o pacote no addons.mozilla.org.
+**Instalar no Chrome:** `chrome://extensions` → ative o *Modo do desenvolvedor* → *Carregar sem compactação* → escolha a pasta descompactada (ou `extension/`).
+
+**Instalar no Firefox (140+):** `about:debugging#/runtime/this-firefox` → *Carregar extensão temporária…* → o `.zip` da release (ou `extension/manifest.json`). Para instalar de forma permanente, assine o pacote no addons.mozilla.org.
 
 A selfie continua sendo feita normalmente, só que no celular. A extensão não pula nem altera a verificação e não coleta nenhum dado. Este projeto não tem vínculo com a Unico nem com a Smiles.
