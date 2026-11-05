@@ -2,15 +2,14 @@
   "manifest_version": 3,
   "name": "Unico QR Handoff",
   "short_name": "QR Handoff",
-  "version": "1.0.0",
-  "description": "Makes Unico's identity check offer the QR code on desktop, so you can take the selfie on your phone.",
+  "version": "1.1.0",
+  "description": "Makes Unico's identity check offer the QR code on desktop and adds a button to copy the QR link.",
   "homepage_url": "https://github.com/murandido/unico-qr-handoff",
   "content_scripts": [
     {
       "matches": [
-        "https://cadastro.unico.app/*",
-        "https://cadastro.unico.io/*",
-        "https://id.unico.io/*"
+        "https://*.unico.app/*",
+        "https://*.unico.io/*"
       ],
       "js": [
         "src/spoof-ua.js"
@@ -18,6 +17,18 @@
       "run_at": "document_start",
       "all_frames": true,
       "world": "MAIN"
+    },
+    {
+      "matches": [
+        "https://*.unico.app/*",
+        "https://*.unico.io/*"
+      ],
+      "js": [
+        "vendor/jsQR.js",
+        "src/copy-link.js"
+      ],
+      "run_at": "document_idle",
+      "all_frames": true
     }
   ],
   "browser_specific_settings": {
