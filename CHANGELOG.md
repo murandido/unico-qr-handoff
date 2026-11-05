@@ -16,4 +16,4 @@ All notable changes to this project are documented here. Versions follow [Semant
 - Tests that mirror Unico's browser-support check using `ua-parser-js`.
 
 [1.1.0]: https://github.com/murandido/unico-qr-handoff/releases/tag/v1.1.0
-[1.0.0]: https://github.com/murandido/unico-qr-handoff/commit/4eccde1
+[1.0.0]: https://github.com/murandido/unico-qr-handoff/tree/v1.0.0
