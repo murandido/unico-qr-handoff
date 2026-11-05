@@ -1,0 +1,18 @@
+{
+  "name": "unico-qr-handoff",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Browser extension (Chrome and Firefox) that makes Unico's identity check offer the QR code on desktop.",
+  "license": "MIT",
+  "author": "murandido",
+  "type": "module",
+  "scripts": {
+    "test": "node --test \"test/**/*.test.js\"",
+    "lint:firefox": "web-ext lint --source-dir extension",
+    "build": "web-ext build --source-dir extension --artifacts-dir dist --overwrite-dest"
+  },
+  "devDependencies": {
+    "ua-parser-js": "2.0.10",
+    "web-ext": "10.8.0"
+  }
+}

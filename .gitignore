@@ -1,0 +1,16 @@
+node_modules/
+dist/
+web-ext-artifacts/
+*.zip
+*.xpi
+
+# Local AI assistant context (not published)
+CLAUDE.md
+**/CLAUDE.md
+.claude/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
